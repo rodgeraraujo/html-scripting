@@ -1,0 +1,24 @@
+{
+  "name": "unknown",
+  "version": "0.1.0",
+  "main": "src/unknown.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodgeraraujo/unknown.git"
+  },
+  "author": "Rogério Araújo <rogerio.araujo@mail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rodgeraraujo/unknown/issues"
+  },
+  "homepage": "https://github.com/rodgeraraujo/unknown#readme",
+  "devDependencies": {
+    "jest": "^26.0.1"
+  },
+  "dependencies": {
+    "pretty": "^2.0.0"
+  }
+}
