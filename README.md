@@ -24,7 +24,7 @@ var HtmlScripting = require('html-scripting');
 
 var htmlScripting = new HtmlScripting('html');
 
-var html5 = htmlScripting.html('5', 'en')html(5, 'en').head('UTF-8', 'My title').body().p('My text here');
+var html5 = htmlScripting.html('5', 'en').head('UTF-8', 'My title').body().p('My text here');
 ```
 
 into this:
