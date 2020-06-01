@@ -1,6 +1,6 @@
-# EasyHtml
+# HtmlScripting
 
-[![npm version](https://badge.fury.io/js/e-html.svg)](https://badge.fury.io/js/e-html) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://badge.fury.io/js/html-scripting.svg)](https://badge.fury.io/js/html-scripting) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 #### Easy way to write HTML code with only JS.
 
@@ -9,7 +9,7 @@
 npm or yarn:
 
 ```sh
-$ npm i e-html
+$ npm i html-scripting
 
 ```
 
@@ -20,11 +20,11 @@ The main idea is to be able to write clear and readable code html, using simple 
 The structure like this, is able to convert this js code:
 
 ```js
-var EasyHtml = require('e-html');
+var HtmlScripting = require('html-scripting');
 
-var eHtml = new EasyHtml();
+var htmlScripting = new HtmlScripting('html');
 
-var html5 = eHtml.html('5', 'en')html(5, 'en').head('UTF-8', 'My title').body().p('My text here');
+var html5 = htmlScripting.html('5', 'en')html(5, 'en').head('UTF-8', 'My title').body().p('My text here');
 ```
 
 into this:
@@ -49,7 +49,7 @@ If you want to contribute to a project and make it better, feel free to fork and
 
 ## License
 
-[MIT](https://github.com/rodgeraraujo/EASY-HTML/blob/master/LICENSE)
+[MIT](https://github.com/rodgeraraujo/html-scripting/blob/master/LICENSE)
 
 ## Author
 

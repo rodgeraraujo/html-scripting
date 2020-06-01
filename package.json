@@ -1,6 +1,6 @@
 {
-  "name": "e-html",
-  "version": "0.1.0",
+  "name": "html-scripting",
+  "version": "0.1.2",
   "main": "src/unknown.js",
   "scripts": {
     "test": "jest"
