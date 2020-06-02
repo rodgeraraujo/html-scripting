@@ -8,14 +8,21 @@ test('instace a new EasyHtml', () => {
 
 test('generate html5 structure', () => {
   var eHtml = new EasyHtml('html').html(5, 'en');
-  expect(pretty(eHtml.code)).toBe(pretty('<!DOCTYPE html><html lang="en">%head% <body>%container%</body></html>'));
+  expect(pretty(eHtml.code)).toBe(
+    pretty('<!DOCTYPE html><html lang="en">%head% <body>%container%</body></html>')
+  );
 });
 
 test('complete html5 with paragraph', () => {
-  console.log(pretty(eHtml.code));
+  var eHtml = new EasyHtml('html')
+    .html('5', 'en')
+    .head('UTF-8', 'My title')
+    .body()
+    .p('My text here');
+
   expect(pretty(eHtml.code)).toBe(
     pretty(
-      '<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My title</title></head> <body><p>My text here</p></body></html>'
+      '<html lang="en"><head><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>My title</title></head><body><p>My text here</p></body></html>'
     )
   );
 });
