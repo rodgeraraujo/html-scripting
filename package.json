@@ -1,20 +1,20 @@
 {
   "name": "html-scripting",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "src/index.js",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rodgeraraujo/unknown.git"
+    "url": "git+https://github.com/rodgeraraujo/html-scripting.git"
   },
   "author": "Rogério Araújo <rogerio.araujo@mail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rodgeraraujo/unknown/issues"
+    "url": "https://github.com/rodgeraraujo/html-scripting/issues"
   },
-  "homepage": "https://github.com/rodgeraraujo/unknown#readme",
+  "homepage": "https://github.com/rodgeraraujo/html-scripting#readme",
   "devDependencies": {
     "jest": "^26.0.1"
   },

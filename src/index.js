@@ -1,4 +1,6 @@
 const Html = require('./html');
+const Table = require('./table');
+
 const c = require('./constants');
 const { removeTag } = require('./utils');
 const t = require('./tags');
@@ -45,7 +47,10 @@ class EasyHtml extends Html {
    * @return {String}
    */
   html(version, lang) {
-    this.code = version === 5 ? super.html(version, lang).code.replace(t.TAG_BODY, `<body>${t.TAG_CONTAINER}</body>`) : super.html(version, lang);
+    this.code =
+      version === 5
+        ? super.html(version, lang).code.replace(t.TAG_BODY, `<body>${t.TAG_CONTAINER}</body>`)
+        : super.html(version, lang);
     return this;
   }
 
@@ -73,13 +78,26 @@ class EasyHtml extends Html {
   }
 
   /**
-   * Return the attribute paragraph.`
+   * Return the attribute paragraph.
    *
    * @param {String} text The text to diplay in paragraph
    * @return {EasyHtml}
    */
   p(text) {
     this.code = this.code.replace(t.TAG_CONTAINER, `<p>${text}</p>`);
+    return this;
+  }
+
+  /**
+   * The Table element.
+   *
+   * @param {Object} type The type of table
+   * @param {Array} data The data of table
+   * @return {Table} A table
+   */
+  table(type, data) {
+    var table = new Table();
+    this.code = this.code.replace(t.TAG_CONTAINER, table.build(type, data).table);
     return this;
   }
 }
