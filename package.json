@@ -1,8 +1,10 @@
 {
   "name": "html-scripting",
-  "version": "0.1.4",
-  "main": "src/index.js",
+  "description": "Easy way to write HTML code with only JS.",
+  "version": "0.1.5",
+  "main": "index.js",
   "scripts": {
+    "build": "gulp",
     "test": "jest"
   },
   "repository": {
@@ -16,6 +18,7 @@
   },
   "homepage": "https://github.com/rodgeraraujo/html-scripting#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "jest": "^26.0.1"
   },
   "dependencies": {
